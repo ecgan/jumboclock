@@ -11,10 +11,10 @@ class App extends Component {
     
     const containerStyle = {
       display: 'flex',
-      flex: 'auto',
       flexDirection: 'column',
       justifyContent: 'center',
       alignContent: 'center',
+      alignItems: 'center',
       width: '100%',
       height: '100%'
     };
@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className="App" style={appStyle}>
         <div className="flex-container" style={containerStyle} >
-          <div>
+          <div className="flex-item">
             <Clock></Clock>
           </div>
         </div>
