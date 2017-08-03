@@ -24,8 +24,12 @@ class Clock extends Component {
   }
 
   render() {
+    const style = {
+      fontSize: '16vw'
+    };
+
     return (
-      <span>{this.state.date.toLocaleTimeString()}</span>
+      <span style={style}>{this.state.date.toLocaleTimeString()}</span>
     );
   }
 }
