@@ -36,6 +36,10 @@ jobs:
       # run tests!
       - run: yarn test
 
+      - add_ssh_keys:
+          fingerprints:
+            - "8c:f5:43:ec:f9:a4:3b:a7:f0:4c:a4:36:be:30:31:b9"
+
       - deploy:
           name: Deploy Master to GitHub Pages
           command: |
